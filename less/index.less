@@ -55,7 +55,80 @@ table {
 
 html, body {
 	height: 100%;
+	font-family: 'Roboto', sans-serif;
+
+	h1 {
+		font-size: 27px;
+		padding-bottom: 10px;
+	}
+	
+	h2, h3, h4, h5 {
+		font-size: 18px;
+		margin-bottom: 15px;
+		font-family: 'Rubik', sans-serif;
+	}
+
+	p {
+		line-height: 1.4;
+	}
+
+	.container {
+		max-width: 840px;
+		margin: 0 auto;
+
+		header {
+			display: flex;
+			justify-content: flex-end;
+
+			nav {
+				display: flex;
+				width: 30%;
+				justify-content: space-between;
+				padding: 20px 0px;
+
+				.link-nav {
+					font-size: 14px;
+    				color: black;
+					text-decoration: none;
+				}
+			}
+
+		}
+
+		.intro {
+			background-color: rgb(221, 220, 220);
+			border-radius: 10px;
+			padding: 40px 20px;
+			margin-bottom: 20px;
+
+			.top-content {
+				border-bottom: solid 1px rgb(192, 190, 190);
+				margin-bottom: 20px;
+
+				.portrait {
+					padding-bottom: 20px;
+					border-radius: 20%;
+					height: 300px;
+					width: auto;
+					
+				}
+
+				p {
+					font-size: 11px;
+					padding-bottom: 20px;
+					font-style: italic;
+				}
+
+			}
+		}
+
+		
+
+	}
+
 }
+
+
 
 
 

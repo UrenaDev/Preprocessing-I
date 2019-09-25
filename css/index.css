@@ -133,4 +133,74 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+html h1,
+body h1 {
+  font-size: 27px;
+  padding-bottom: 10px;
+}
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
+}
+html p,
+body p {
+  line-height: 1.4;
+}
+html .container,
+body .container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+html .container header,
+body .container header {
+  display: flex;
+  justify-content: flex-end;
+}
+html .container header nav,
+body .container header nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+html .container header nav .link-nav,
+body .container header nav .link-nav {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+html .container .intro,
+body .container .intro {
+  background-color: #dddcdc;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+html .container .intro .top-content,
+body .container .intro .top-content {
+  border-bottom: solid 1px #c0bebe;
+  margin-bottom: 20px;
+}
+html .container .intro .top-content .portrait,
+body .container .intro .top-content .portrait {
+  padding-bottom: 20px;
+  border-radius: 20%;
+  height: 300px;
+  width: auto;
+}
+html .container .intro .top-content p,
+body .container .intro .top-content p {
+  font-size: 11px;
+  padding-bottom: 20px;
+  font-style: italic;
 }
