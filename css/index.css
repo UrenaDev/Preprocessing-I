@@ -1,1 +1,272 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #31323a;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  /* Variables */
+  /* Mixins */
+  /* Content */
+}
+html h1,
+body h1 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
+}
+html p,
+body p {
+  line-height: 1.4;
+}
+html .borderNpadding,
+body .borderNpadding {
+  border-radius: 10px;
+  padding: 20px;
+}
+html .FlexColumnCenter,
+body .FlexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html .container,
+body .container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+html .container header,
+body .container header {
+  display: flex;
+  justify-content: flex-end;
+}
+html .container header nav,
+body .container header nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+@media (max-width: 500px) {
+  html .container header nav,
+  body .container header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+html .container header nav .link-nav,
+body .container header nav .link-nav {
+  font-size: 14px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+html .container header nav .link-nav:hover,
+body .container header nav .link-nav:hover {
+  color: #ebcf31;
+}
+html .container .intro,
+body .container .intro {
+  background-color: #69d4a2;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+html .container .intro .top-content,
+body .container .intro .top-content {
+  border-bottom: solid 1px #ebcf31;
+  margin-bottom: 20px;
+}
+html .container .intro .top-content .portrait,
+body .container .intro .top-content .portrait {
+  padding-bottom: 20px;
+  border-radius: 20%;
+  height: 250px;
+  width: auto;
+}
+html .container .intro .top-content p,
+body .container .intro .top-content p {
+  font-size: 11px;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+html .container .main-content,
+body .container .main-content {
+  background-color: #69d4a2;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+html .container .main-content .skills,
+body .container .main-content .skills {
+  width: 45%;
+}
+html .container .main-content .skills li,
+body .container .main-content .skills li {
+  border-bottom: solid 1px #ebcf31;
+  width: 65%;
+  margin-bottom: 10px;
+}
+html .container .main-content .work,
+body .container .main-content .work {
+  width: 55%;
+}
+html .container .contact,
+body .container .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #69d4a2;
+  border-radius: 10px;
+  padding: 20px;
+}
+html .container footer,
+body .container footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 15px;
+  background-color: #ebcf31;
+}
