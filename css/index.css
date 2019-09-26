@@ -135,6 +135,9 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  /* Variables */
+  /* Mixins */
+  /* Content */
 }
 html h1,
 body h1 {
@@ -156,6 +159,17 @@ body h5 {
 html p,
 body p {
   line-height: 1.4;
+}
+html .borderNpadding,
+body .borderNpadding {
+  border-radius: 10px;
+  padding: 20px;
+}
+html .FlexColumnCenter,
+body .FlexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 html .container,
 body .container {
@@ -179,6 +193,10 @@ body .container header nav .link-nav {
   font-size: 14px;
   color: whitesmoke;
   text-decoration: none;
+}
+html .container header nav .link-nav:hover,
+body .container header nav .link-nav:hover {
+  color: #ebcf31;
 }
 html .container .intro,
 body .container .intro {
@@ -208,14 +226,20 @@ body .container .intro .top-content p {
 html .container .main-content,
 body .container .main-content {
   background-color: #69d4a2;
-  border-radius: 10px;
-  padding: 20px;
   display: flex;
   margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
 }
 html .container .main-content .skills,
 body .container .main-content .skills {
   width: 45%;
+}
+html .container .main-content .skills li,
+body .container .main-content .skills li {
+  border-bottom: solid 1px #ebcf31;
+  width: 65%;
+  margin-bottom: 10px;
 }
 html .container .main-content .work,
 body .container .main-content .work {

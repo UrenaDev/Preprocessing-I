@@ -73,6 +73,23 @@ html, body {
 		line-height: 1.4;
 	}
 
+	/* Variables */
+	@green: rgb(105, 212, 162);
+	@gold: rgb(235, 207, 49);
+
+	/* Mixins */
+	.borderNpadding {
+		border-radius: 10px;	
+		padding: 20px;
+	}
+
+	.FlexColumnCenter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* Content */
 	.container {
 		max-width: 840px;
 		margin: 0 auto;
@@ -92,18 +109,22 @@ html, body {
     				color: whitesmoke;
 					text-decoration: none;
 				}
+
+				.link-nav:hover {
+					color: @gold;
+				}
 			}
 
 		}
 
 		.intro {
-			background-color:rgb(105, 212, 162);
+			background-color: @green;
 			border-radius: 10px;
 			padding: 40px 20px;
 			margin-bottom: 20px;
 
 			.top-content {
-				border-bottom: solid 1px rgb(235, 207, 49);
+				border-bottom: solid 1px @gold;
 				margin-bottom: 20px;
 
 				.portrait {
@@ -124,14 +145,20 @@ html, body {
 		}
 
 		.main-content {
-			background-color: rgb(105, 212, 162);
-			border-radius: 10px;	
-			padding: 20px;
+			background-color: @green;
 			display: flex;
 			margin-bottom: 20px;
+			.borderNpadding();
 
 			.skills {
 				width: 45%;
+
+				li {
+					border-bottom: solid 1px @gold;
+					width: 65%;
+					margin-bottom: 10px;
+				}
+
 			}
 
 			.work {
@@ -140,12 +167,9 @@ html, body {
 		}
 
 		.contact {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color: rgb(105, 212, 162);
-			border-radius: 10px;	
-			padding: 20px;
+			.FlexColumnCenter();
+			background-color: @green;
+			.borderNpadding();
 		}
 
 		footer {
@@ -153,7 +177,7 @@ html, body {
 			justify-content: center;
 			margin-top: 80px;
 			padding: 15px;
-			background-color: rgb(235, 207, 49)
+			background-color: @gold;
 		}
 
 		
